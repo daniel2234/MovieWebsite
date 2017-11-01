@@ -1,7 +1,7 @@
 import fresh_tomatoes
 import media
 
-
+# Every instance of a movie class is created
 a_space_odyessey= media.Movie("2001: A Space Odyssey",
                              "The film follows a voyage to Jupiter with the sentient computer Hal after the discovery of a mysterious black monolith affecting human evolution.",
                              "http://t0.gstatic.com/images?q=tbn:ANd9GcQdmmLZ7lXsw1WRy7c5qN3mka2e9ANSpHIG2INi53P6OVS8KyJo",
@@ -72,6 +72,8 @@ greed = media.Movie("Greed",
                     "https://upload.wikimedia.org/wikipedia/commons/2/27/Greed3.jpg",
                     "https://www.youtube.com/watch?v=UWLUxuoLFvo")
 
-
+# This python list shows all the instances of the movie class
 movies = [a_space_odyessey, alien, blade_runner, the_spy_who_loved_me,superman, the_hit, angry_men, the_thin_red_line, dr_mabuses_testmente, bad_timing, merry_christmas_mr_lawrence, for_all_mankind, koyaanisqatsi, greed]
+
+#this method renders the movie website and movie tiles
 fresh_tomatoes.open_movies_page(movies)
