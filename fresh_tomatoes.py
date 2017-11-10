@@ -2,6 +2,7 @@ import webbrowser
 import os
 import re
 
+
 # Styles and scripting for the page
 main_page_head = '''
 <!DOCTYPE html>
@@ -11,7 +12,8 @@ main_page_head = '''
     <title>Fresh Tomatoes!</title>
 
     <!-- Bootstrap 3 -->
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" 
+        href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
@@ -51,6 +53,10 @@ main_page_head = '''
             left: 0;
             top: 0;
             background-color: white;
+        }
+      
+        h2 {
+          font-size: 18px;
         }
 
     </style>
@@ -102,7 +108,6 @@ main_page_content = '''
     <!-- Main Page Content -->
     <div class="container">
       <h1 class="text-center">Christopher Nolan's Top 15 Movies</h1>
-      <h6 class="text-center">movie</h6>
     </div>
     <div class="container">
       {movie_tiles}
@@ -114,7 +119,7 @@ main_page_content = '''
 
 # A single movie entry html template
 movie_tile_content = '''
-<div class="col-lg-5 col-md-5 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
+<div class="col-lg-3 col-md-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
     <img src="{poster_image_url}" width="200" height="300">
     <h2>{movie_title}</h2>
 </div>

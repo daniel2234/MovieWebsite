@@ -21,3 +21,4 @@ class Movie():
 
     def play_trailer(self):
         webbrowser.open(self.trailer_youtube_url)
+
